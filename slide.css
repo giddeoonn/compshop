@@ -1,0 +1,68 @@
+.swiper {
+  width: 100%;
+  max-width: 300px;
+  padding-bottom: 0.2rem;
+  position: relative;
+}
+.card-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slider-button {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+}
+.card-wrapper {
+  margin: 0 0rem 2rem;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.card-list .card-item .product_image {
+  user-select: none;
+  display: block;
+  padding: 0.8rem;
+  border-radius: 15px;
+  line-height: 1.4;
+}
+.card-list .card-item .product_image:active {
+  cursor: grabbing;
+}
+.card-list .card-item .product_image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.swiper-pagination-bullet {
+  height: 10px !important;
+  width: 10px !important;
+  background-color: #888 !important;
+  opacity: 0.6 !important;
+  display: inline-block;
+  margin: 0 4px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+  opacity: 1;
+}
+
+.swiper .swiper-slider-button {
+  margin-top: -2.3rem;
+  padding: 0.6rem;
+  border-radius: 50px;
+}
+.swiper-button-next {
+  right: -10px !important;
+  color: white !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper {
+    margin: 0 0 2rem;
+  }
+  .swiper .swiper-slider-button {
+    display: none;
+  }
+}

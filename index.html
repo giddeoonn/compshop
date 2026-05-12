@@ -6,11 +6,18 @@
     <title>KimShop</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slide.css" />
 
     <!-- Google Icons -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+
+    <!-- LINKING SwiperJS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -87,8 +94,29 @@
                 <a href="">View This</a>
               </div>
             </div>
-            <div class="product_image">
-              <img src="imgaes/products/system_unit.png" alt="" />
+            <div class="swiper">
+              <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                  <li class="card-item swiper-slide">
+                    <div class="product_image card_image">
+                      <img src="imgaes/products/system_unit.png" alt="" />
+                    </div>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <div class="product_image card_image">
+                      <img src="imgaes/products/system_unit.png" alt="" />
+                    </div>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <div class="product_image card_image">
+                      <img src="imgaes/products/system_unit.png" alt="" />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slider-button swiper-button-next"></div>
             </div>
           </div>
 
@@ -108,5 +136,9 @@
         </div>
       </div>
     </div>
+
+    <!-- LINKING SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="slide.js"></script>
   </body>
 </html>
