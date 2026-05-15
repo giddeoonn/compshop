@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KimShop</title>
+    <link rel="icon" type="image/png" href="imgaes/kimshop_logo.png" />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="section2.css" />
+    <link rel="stylesheet" href="scroll.css" />
     <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" href="nav.css" />
 
     <!-- Google Icons -->
     <link
@@ -21,117 +25,303 @@
     />
   </head>
   <body>
-    <div class="container">
-      <nav id="desktop-nav">
-        <div class="logo"><img src="imgaes/kimshop_logo.png" alt="" /></div>
-        <div class="searchbar">
-          <span class="material-symbols-outlined">search</span>
-          <input type="text" placeholder="Search About our Products" />
-        </div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">PRODUCTS</a></li>
-            <li><a href="">DESKTOP</a></li>
-            <li><a href="">LAPTOP</a></li>
-            <li><a href="" id="about">ABOUT</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-
-    <div class="container">
-      <div class="main-card">
-        <div class="sub-card left">
-          <h1>
-            <span>Experience</span><br />
-            <span class="extra">The </span> <span class="bold">future</span>
-          </h1>
-          <p>
-            The future of technology will not be measured<br />by how powerful
-            computers and AI become<br />but by reliably they serve, protect,
-            and empower the people who depend on tham.
-          </p>
-          <div>
-            <a href=""> VIEW MORE </a>
+    <div class="scroller-container">
+      <div class="container">
+        <nav id="desktop-nav">
+          <div class="logo"><img src="imgaes/kimshop_logo.png" alt="" /></div>
+          <div class="searchbar">
+            <span class="material-symbols-outlined">search</span>
+            <input type="text" placeholder="Search About our Products" />
           </div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href="">PRODUCTS</a></li>
+              <li><a href="">DESKTOP</a></li>
+              <li><a href="">LAPTOP</a></li>
+              <li><a href="" id="about">ABOUT</a></li>
+            </ul>
+          </div>
+        </nav>
 
-          <div class="showcase_card">
-            <div class="specs">
-              <h2>SPECS</h2>
-              <ul>
-                <li class="spec-info">
-                  <div><p>CPU</p></div>
-                  <div><p>AMD Ryzen 7 7800X3D</p></div>
-                </li>
-                <li class="spec-info">
-                  <div><p>GPU</p></div>
-                  <div><p>NVIDIA GeForce RTX 4080</p></div>
-                </li>
-                <li class="spec-info">
-                  <div><p>RAM</p></div>
-                  <div><p>32GB DDR5 RGB</p></div>
-                </li>
-                <li class="spec-info">
-                  <div><p>Storage</p></div>
-                  <div><p>2TB NVMe SSD</p></div>
-                </li>
-                <li class="spec-info">
-                  <div><p>Cooler</p></div>
-                  <div><p>360mm RGB AIO</p></div>
-                </li>
-                <li class="spec-info">
-                  <div><p>PSU</p></div>
-                  <div><p>850W Gold</p></div>
-                </li>
-                <li class="spec-info">
-                  <div><p>Case</p></div>
-                  <div><p>Dual-Chamber Tempered Glass</p></div>
-                </li>
-              </ul>
-              <div class="spec-btn">
-                <a href="">ADD TO CART</a>
-                <a href="">View This</a>
-              </div>
+        <nav id="tablet-nav">
+          <div class="logo"><img src="imgaes/kimshop_logo.png" alt="" /></div>
+          <div class="searchbar">
+            <span class="material-symbols-outlined">search</span>
+            <input type="text" placeholder="Search About our Products" />
+          </div>
+          <div class="ham-menu">
+            <span class="material-symbols-outlined"> menu </span>
+          </div>
+        </nav>
+
+        <div id="mobile-nav">
+          <a href=""><span class="material-symbols-outlined"> home </span></a>
+          <a href=""
+            ><span class="material-symbols-outlined"> package </span></a
+          >
+          <div class="search">
+            <span class="material-symbols-outlined" class="searchbar-icon">
+              search
+            </span>
+          </div>
+          <a href=""
+            ><span class="material-symbols-outlined"> monitor </span></a
+          >
+          <a href=""><span class="material-symbols-outlined"> info </span></a>
+        </div>
+      </div>
+
+      <div class="container section">
+        <div class="main-card">
+          <div class="sub-card left">
+            <h1>
+              <span>Experience</span><br />
+              <span class="extra">The </span> <span class="bold">future</span>
+            </h1>
+            <p>
+              The future of technology will not be measured<br />by how powerful
+              computers and AI become<br />but by reliably they serve, protect,
+              and empower the people who depend on tham.
+            </p>
+            <div>
+              <a href=""> VIEW MORE </a>
             </div>
-            <div class="swiper">
-              <div class="card-wrapper">
-                <ul class="card-list swiper-wrapper">
-                  <li class="card-item swiper-slide">
-                    <div class="product_image card_image">
-                      <img src="imgaes/products/system_unit.png" alt="" />
-                    </div>
+
+            <div class="showcase_card">
+              <div class="specs">
+                <h2>SPECS</h2>
+                <ul>
+                  <li class="spec-info">
+                    <div><p>CPU</p></div>
+                    <div><p>AMD Ryzen 7 7800X3D</p></div>
                   </li>
-                  <li class="card-item swiper-slide">
-                    <div class="product_image card_image">
-                      <img src="imgaes/products/system_unit.png" alt="" />
-                    </div>
+                  <li class="spec-info">
+                    <div><p>GPU</p></div>
+                    <div><p>NVIDIA GeForce RTX 4080</p></div>
                   </li>
-                  <li class="card-item swiper-slide">
-                    <div class="product_image card_image">
-                      <img src="imgaes/products/system_unit.png" alt="" />
-                    </div>
+                  <li class="spec-info">
+                    <div><p>RAM</p></div>
+                    <div><p>32GB DDR5 RGB</p></div>
+                  </li>
+                  <li class="spec-info">
+                    <div><p>Storage</p></div>
+                    <div><p>2TB NVMe SSD</p></div>
+                  </li>
+                  <li class="spec-info">
+                    <div><p>Cooler</p></div>
+                    <div><p>360mm RGB AIO</p></div>
+                  </li>
+                  <li class="spec-info">
+                    <div><p>PSU</p></div>
+                    <div><p>850W Gold</p></div>
+                  </li>
+                  <li class="spec-info">
+                    <div><p>Case</p></div>
+                    <div><p>Dual-Chamber Tempered Glass</p></div>
                   </li>
                 </ul>
+                <div class="spec-btn">
+                  <a href="">ADD TO CART</a>
+                  <a href="">View This</a>
+                </div>
               </div>
+              <div class="swiper">
+                <div class="card-wrapper">
+                  <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                      <div class="product_image card_image">
+                        <img src="imgaes/products/system_unit.png" alt="" />
+                      </div>
+                    </li>
+                    <li class="card-item swiper-slide">
+                      <div class="product_image card_image">
+                        <img src="imgaes/products/system_unit.png" alt="" />
+                      </div>
+                    </li>
+                    <li class="card-item swiper-slide">
+                      <div class="product_image card_image">
+                        <img src="imgaes/products/system_unit.png" alt="" />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
 
-              <div class="swiper-pagination"></div>
-              <div class="swiper-slider-button swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slider-button swiper-button-next"></div>
+              </div>
             </div>
-          </div>
 
-          <!-- <div class="socials">
+            <!-- <div class="socials">
             <a href=""><img src="imgaes/socials/youtube.png" alt="" /></a>
             <a href=""><img src="imgaes/socials/tik-tok.png" alt="" /></a>
             <a href=""><img src="imgaes/socials/facebook.png" alt="" /></a>
             <a href=""><img src="imgaes/socials/instagram.png" alt="" /></a>
           </div> -->
-        </div>
+          </div>
 
-        <div class="sub-card right">
-          <div class="combine">
-            <img src="imgaes/products/gpu1.png" alt="" />
-            <a href="">SHOP MORE</a>
+          <div class="sub-card right">
+            <div class="combine">
+              <img src="imgaes/products/gpu1.png" alt="" />
+              <a href="">SHOP MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container section two">
+        <div class="card top">
+          <div>
+            <h1>
+              Three <span id="giant">Giants</span> <br />
+              <b><span id="one">One</span> <span id="goal">Goal</span></b>
+            </h1>
+            <p>
+              -Discover <span id="new">NEW</span> life innovation, let the
+              legends do your <span id="work">WoRK</span>
+            </p>
+            <button>WHAT'S NEW</button>
+          </div>
+        </div>
+        <br />
+        <div class="card bottom">
+          <div class="product-card">
+            <div class="brand-card nvidia">NVIDIA</div>
+            <img src="imgaes/products/nvidia.png" alt="" />
+            <div class="product-info">
+              <div class="product-info-subcard">
+                <img src="imgaes/products/nvidia.png" alt="" />
+
+                <div class="mini-card">
+                  <h3 id="nvidia">NVIDIA</h3>
+                  <ul>
+                    <li class="spec-info">
+                      <div>
+                        <p>
+                          Case: Thermalright panoramic dual-chamber style case
+                        </p>
+                      </div>
+                    </li>
+                    <li class="spec-info">
+                      <div><p>GPU: ASUS GeForce RTX graphics card</p></div>
+                    </li>
+                    <li class="spec-info">
+                      <div><p>CPU Cooler: 240mm AIO liquid cooler</p></div>
+                    </li>
+                    <li class="spec-info">
+                      <div>
+                        <p>Motherboard: ATX motherboard (blacktheme)</p>
+                      </div>
+                    </li>
+                    <li class="spec-info">
+                      <div><p>RAM: DDR4/DDR5 RGB RAM</p></div>
+                    </li>
+                  </ul>
+                  <div class="spec-btn">
+                    <a href="" class="viewbtn">VIEW THIS</a>
+                    <a href="" class="heartbtn"
+                      ><span class="material-symbols-outlined">
+                        heart_plus
+                      </span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="brand-card amd">AMD</div>
+            <img src="imgaes/products/amd.png" alt="" />
+            <div class="product-info">
+              <div class="product-info-subcard">
+                <img src="imgaes/products/amd.png" alt="" class="amd-img" />
+
+                <div class="mini-card">
+                  <h3 id="amd">AMD</h3>
+                  <ul>
+                    <li class="spec-info">
+                      <div>
+                        <p>
+                          Case: Thermalright panoramic dual-chamber style case
+                        </p>
+                      </div>
+                    </li>
+                    <li class="spec-info">
+                      <div><p>GPU: ASUS GeForce RTX graphics card</p></div>
+                    </li>
+                    <li class="spec-info">
+                      <div><p>CPU Cooler: 240mm AIO liquid cooler</p></div>
+                    </li>
+                    <li class="spec-info">
+                      <div>
+                        <p>Motherboard: ATX motherboard (blacktheme)</p>
+                      </div>
+                    </li>
+                    <li class="spec-info">
+                      <div><p>RAM: DDR4/DDR5 RGB RAM</p></div>
+                    </li>
+                  </ul>
+                  <div class="spec-btn">
+                    <a href="" class="viewbtn">VIEW THIS</a>
+                    <a href="" class="heartbtn"
+                      ><span class="material-symbols-outlined">
+                        heart_plus
+                      </span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="brand-card intel">INTEL</div>
+            <img src="imgaes/products/intel.png" alt="" />
+            <div class="product-info">
+              <div class="product-info-subcard">
+                <img
+                  src="imgaes/products/intel.png"
+                  alt=""
+                  class="for-mobile"
+                />
+
+                <div class="mini-card">
+                  <h3 id="intel">INTEL</h3>
+                  <ul>
+                    <li class="spec-info">
+                      <div>
+                        <p>
+                          Case: Thermalright panoramic dual-chamber style case
+                        </p>
+                      </div>
+                    </li>
+                    <li class="spec-info">
+                      <div><p>GPU: ASUS GeForce RTX graphics card</p></div>
+                    </li>
+                    <li class="spec-info">
+                      <div><p>CPU Cooler: 240mm AIO liquid cooler</p></div>
+                    </li>
+                    <li class="spec-info">
+                      <div>
+                        <p>Motherboard: ATX motherboard (blacktheme)</p>
+                      </div>
+                    </li>
+                    <li class="spec-info">
+                      <div><p>RAM: DDR4/DDR5 RGB RAM</p></div>
+                    </li>
+                  </ul>
+                  <div class="spec-btn">
+                    <a href="" class="viewbtn">VIEW THIS</a>
+                    <a href="" class="heartbtn"
+                      ><span class="material-symbols-outlined">
+                        heart_plus
+                      </span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

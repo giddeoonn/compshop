@@ -1,0 +1,249 @@
+.card {
+  margin: 0 1rem;
+}
+.card.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  text-align: right;
+  line-height: 1.2;
+}
+.card.top h1 {
+  font-family: "Brolink_DEMO", sans-serif;
+  font-size: 3rem;
+}
+.card.top b {
+  font-size: 5rem;
+}
+.card.top #giant {
+  color: rgb(32, 177, 32);
+}
+.card.top #one {
+  color: red;
+}
+.card.top #goal {
+  color: rgb(33, 140, 240);
+}
+.card.top p {
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+.card.top #new,
+.card.top #work {
+  font-family: "Varino", sans-serif;
+}
+.card.top button {
+  background: none;
+  border: 2px solid white;
+  border-radius: 50px;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  font-family: "Varino", sans-serif;
+  margin-top: 2rem;
+}
+
+/* ======================================================= PRODUCT SECTION!!!! =======================================================  */
+.card.bottom {
+  margin-top: 2rem;
+  display: flex;
+}
+.product-card {
+  height: 25rem;
+  width: 35%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  /* transition: 0.3s ease-in-out; */
+}
+/* .product-card:hover {
+  height: 30rem;
+  width: 40%;
+} */
+.brand-card {
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  border-radius: 15px;
+  z-index: 1;
+
+  display: flex;
+  align-items: left;
+  justify-content: center;
+
+  font-family: "Brolink_DEMO", sans-serif;
+  writing-mode: vertical-lr;
+  text-orientation: upleft;
+  padding: 1rem 0.5rem;
+  font-size: 4rem;
+}
+.brand-card.nvidia {
+  background-color: rgb(32, 177, 32);
+  color: green;
+}
+.brand-card.amd {
+  background-color: red;
+  color: rgb(158, 12, 12);
+}
+.brand-card.intel {
+  background-color: rgb(33, 140, 240);
+  color: rgb(20, 104, 184);
+}
+.product-info {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(10, 10, 10, 0.733);
+  backdrop-filter: blur(2px);
+  border-radius: 25px;
+  padding: 1rem;
+  width: 80%;
+  height: 85%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-info .product-info-subcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 25px;
+}
+.product-info .mini-card {
+  margin-left: 40%;
+  padding: 0 0.5rem;
+}
+.product-info .product-info-subcard .spec-info {
+  width: 100%;
+  color: rgb(209, 204, 204);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.product-info h3 {
+  font-size: 1.5rem;
+  font-family: "Varino", sans-serif;
+}
+.product-info #nvidia {
+  color: rgb(32, 177, 32);
+}
+.product-info #amd {
+  color: red;
+}
+.product-info #intel {
+  color: rgb(33, 140, 240);
+}
+.product-info .spec-btn {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.product-info .spec-btn .viewbtn {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 0.2rem 1rem;
+  font-family: "Varino", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-info .spec-btn .heartbtn span {
+  font-weight: 600;
+  padding: 0.25rem;
+  background-color: white;
+  color: black;
+  border-radius: 100px;
+}
+.product-info .spec-btn span {
+  font-size: 1.2rem;
+}
+
+.product-info-subcard img {
+  display: none;
+}
+.product-card img {
+  position: absolute;
+  left: 3rem;
+  z-index: 3;
+  width: 45%;
+  transform: rotate(-5deg);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card.bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding: 0.5rem;
+  }
+  .product-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .card.top h1 {
+    font-family: "Brolink_DEMO", sans-serif;
+    font-size: 1.5rem;
+  }
+  .card.top b {
+    font-size: 3rem;
+  }
+  .card.top p {
+    font-size: 1rem;
+    text-align: right;
+  }
+
+  .card.bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5rem;
+    padding: 0.5rem;
+  }
+  .product-card {
+    width: 100%;
+  }
+  .brand-card {
+    left: -0.5rem;
+    width: 50%;
+  }
+  .product-info {
+    height: 100%;
+  }
+  .product-info .mini-card {
+    margin-top: 3rem;
+    margin-left: 0;
+    padding: 0 0.5rem;
+  }
+  .product-card img {
+    display: none;
+  }
+  .product-info-subcard img {
+    display: block;
+    top: -3rem;
+    left: 40%;
+    z-index: 3;
+    width: 75%;
+    transform: rotate(5deg);
+  }
+  .product-info-subcard .amd-img {
+    top: -4rem;
+    padding: 0.67rem;
+  }
+
+  .product-info .spec-btn {
+    margin-top: 0.5rem;
+  }
+  .product-info .spec-btn .viewbtn {
+    font-size: 0.67rem;
+  }
+}
