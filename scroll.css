@@ -1,22 +1,23 @@
 /* 1. The Parent Container */
 .scroller-container {
-  height: 100vh; /* Must be the height of the screen */
-  overflow-y: scroll; /* Enable vertical scrolling */
-  scroll-snap-type: y mandatory; /* Force snapping on the Y axis */
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
   scroll-behavior: smooth;
-  scroll-snap-stop: always;
 }
 
 /* 2. The Sections */
 .section {
-  height: 100vh; /* Each section takes full screen height */
+  height: 100%;
   width: 100%;
-  scroll-snap-align: start; /* Snap the start of the section to the top */
-  scroll-snap-stop: always; /* Prevents skipping multiple sections */
-  padding-top: 4rem;
+  scroll-snap-align: start;
+  padding-top: 3rem;
 }
 .section.two {
   padding-top: 8rem;
+}
+.section.three {
+  padding-top: 1rem;
 }
 
 /* Hide scrollbar for a cleaner "app-like" look (Optional) */

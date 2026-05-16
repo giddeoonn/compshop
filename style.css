@@ -39,6 +39,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  max-width: 1920px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: white;
@@ -103,7 +104,7 @@ nav input {
 .main-card {
   display: flex;
   flex-direction: row;
-  margin: 0.5rem 1rem;
+  margin: 0rem 1rem;
   justify-content: space-between;
 }
 .sub-card.left,
@@ -196,7 +197,7 @@ nav input {
   width: 15rem;
 }
 
-/* .sub-card.left .socials {
+.sub-card.left .socials {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -207,8 +208,8 @@ nav input {
   padding: 0;
 }
 .sub-card.left .socials img {
-  width: 3rem;
-} */
+  width: 2.5rem;
+}
 /* ====================================================== GAWA ni DRIO ====================================================== */
 
 .sub-card.right .combine {

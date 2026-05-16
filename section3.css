@@ -1,0 +1,209 @@
+.container .sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-height: 900px;
+}
+.container .sub-container .logo {
+  margin-top: 5rem;
+  width: 25%;
+  max-width: 35rem;
+}
+.sub-container .middle {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 6rem;
+  gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+.middle .card {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+}
+.about-card {
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+.about-card h3 {
+  font-family: "Brolink_DEMO", sans-serif;
+  font-size: 3rem;
+}
+
+.signup-card {
+  gap: 1rem;
+  background-color: transparent;
+}
+.signup-card h3 {
+  font-family: "space_age", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+form .login,
+form .password {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 15px;
+  border: 1px solid rgb(56, 55, 55);
+  padding: 0.5rem 1rem;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+form input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+}
+form button {
+  background-color: rgb(56, 55, 55);
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px dashed rgb(56, 55, 55);
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.4s;
+}
+form button:hover {
+  transition: 0.4s;
+  border: 1px solid rgb(56, 55, 55);
+  background-color: #fff;
+  color: rgb(56, 55, 55);
+}
+.other-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+}
+.other-links a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(138, 134, 134);
+}
+.login-using small {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgb(104, 103, 103);
+}
+
+.login-using small::before,
+.login-using small::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: black; /* Line color */
+}
+
+.login-using small::before {
+  margin-right: 15px; /* Space after left line */
+}
+
+.login-using small::after {
+  margin-left: 15px; /* Space before right line */
+}
+
+.login-using .socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+.login-using .socials img {
+  width: 1.5rem;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+.note .red {
+  color: red;
+}
+footer {
+  border-top: 1px solid white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem;
+  padding-bottom: 0;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 767px) {
+  .container .sub-container {
+    padding: 0;
+    margin: 0;
+    max-height: none;
+  }
+  .container .sub-container .logo {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .container .sub-container .middle {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .container .sub-container .middle .card {
+    width: 100%;
+  }
+  footer {
+    margin-top: 2rem;
+    padding-bottom: 5.5rem;
+  }
+}
+@media (max-width: 1023px) {
+  .container .sub-container {
+    padding: 0;
+    margin: 0;
+    max-height: none;
+    margin-top: 5rem;
+  }
+  .container .sub-container .logo {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .container .sub-container .middle {
+    flex-direction: column;
+    padding: 0 2rem;
+    margin: 0;
+    width: 100%;
+  }
+  .container .sub-container .middle .card {
+    width: 100%;
+  }
+  footer {
+    margin-top: 2rem;
+  }
+}

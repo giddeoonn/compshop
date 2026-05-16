@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="section2.css" />
+    <link rel="stylesheet" href="section3.css" />
     <link rel="stylesheet" href="scroll.css" />
     <link rel="stylesheet" href="slide.css" />
     <link rel="stylesheet" href="nav.css" />
@@ -35,11 +36,11 @@
           </div>
           <div class="nav-links">
             <ul>
-              <li><a href="">HOME</a></li>
-              <li><a href="">PRODUCTS</a></li>
-              <li><a href="">DESKTOP</a></li>
-              <li><a href="">LAPTOP</a></li>
-              <li><a href="" id="about">ABOUT</a></li>
+              <li><a href="#section1">HOME</a></li>
+              <li><a href="#section2">PRODUCTS</a></li>
+              <li><a href="#section2">DESKTOP</a></li>
+              <li><a href="#section2">LAPTOP</a></li>
+              <li><a href="#section3" id="about">ABOUT</a></li>
             </ul>
           </div>
         </nav>
@@ -56,8 +57,10 @@
         </nav>
 
         <div id="mobile-nav">
-          <a href=""><span class="material-symbols-outlined"> home </span></a>
-          <a href=""
+          <a href="#section1"
+            ><span class="material-symbols-outlined"> home </span></a
+          >
+          <a href="#section2"
             ><span class="material-symbols-outlined"> package </span></a
           >
           <div class="search">
@@ -65,14 +68,16 @@
               search
             </span>
           </div>
-          <a href=""
+          <a href="#section2"
             ><span class="material-symbols-outlined"> monitor </span></a
           >
-          <a href=""><span class="material-symbols-outlined"> info </span></a>
+          <a href="#section3"
+            ><span class="material-symbols-outlined"> info </span></a
+          >
         </div>
       </div>
 
-      <div class="container section">
+      <div class="container section" id="section1">
         <div class="main-card">
           <div class="sub-card left">
             <h1>
@@ -152,12 +157,12 @@
               </div>
             </div>
 
-            <!-- <div class="socials">
-            <a href=""><img src="imgaes/socials/youtube.png" alt="" /></a>
-            <a href=""><img src="imgaes/socials/tik-tok.png" alt="" /></a>
-            <a href=""><img src="imgaes/socials/facebook.png" alt="" /></a>
-            <a href=""><img src="imgaes/socials/instagram.png" alt="" /></a>
-          </div> -->
+            <div class="socials">
+              <a href=""><img src="imgaes/socials/youtube.png" alt="" /></a>
+              <a href=""><img src="imgaes/socials/tik-tok.png" alt="" /></a>
+              <a href=""><img src="imgaes/socials/facebook.png" alt="" /></a>
+              <a href=""><img src="imgaes/socials/instagram.png" alt="" /></a>
+            </div>
           </div>
 
           <div class="sub-card right">
@@ -169,7 +174,7 @@
         </div>
       </div>
 
-      <div class="container section two">
+      <div class="container section two" id="section2">
         <div class="card top">
           <div>
             <h1>
@@ -177,7 +182,7 @@
               <b><span id="one">One</span> <span id="goal">Goal</span></b>
             </h1>
             <p>
-              -Discover <span id="new">NEW</span> life innovation, let the
+              - Discover <span id="new">NEW</span> life innovation, let the
               legends do your <span id="work">WoRK</span>
             </p>
             <button>WHAT'S NEW</button>
@@ -248,18 +253,24 @@
                       </div>
                     </li>
                     <li class="spec-info">
-                      <div><p>GPU: ASUS GeForce RTX graphics card</p></div>
-                    </li>
-                    <li class="spec-info">
-                      <div><p>CPU Cooler: 240mm AIO liquid cooler</p></div>
-                    </li>
-                    <li class="spec-info">
                       <div>
-                        <p>Motherboard: ATX motherboard (blacktheme)</p>
+                        <p>GPU: ASUS Radeon RX graphics card</p>
                       </div>
                     </li>
                     <li class="spec-info">
-                      <div><p>RAM: DDR4/DDR5 RGB RAM</p></div>
+                      <div>
+                        <p>CPU Cooler: 240mm AIO liquid cooler</p>
+                      </div>
+                    </li>
+                    <li class="spec-info">
+                      <div>
+                        <p>Motherboard: AM5 ATX motherboard (black theme)</p>
+                      </div>
+                    </li>
+                    <li class="spec-info">
+                      <div>
+                        <p>RAM: DDR5 RGB RAM</p>
+                      </div>
                     </li>
                   </ul>
                   <div class="spec-btn">
@@ -297,18 +308,18 @@
                       </div>
                     </li>
                     <li class="spec-info">
-                      <div><p>GPU: ASUS GeForce RTX graphics card</p></div>
+                      <div><p>GPU: Intel graphics card</p></div>
                     </li>
                     <li class="spec-info">
                       <div><p>CPU Cooler: 240mm AIO liquid cooler</p></div>
                     </li>
                     <li class="spec-info">
                       <div>
-                        <p>Motherboard: ATX motherboard (blacktheme)</p>
+                        <p>Motherboard: Intel ATX motherboard (black theme)</p>
                       </div>
                     </li>
                     <li class="spec-info">
-                      <div><p>RAM: DDR4/DDR5 RGB RAM</p></div>
+                      <div><p>RAM: DDR5 RGB RAM</p></div>
                     </li>
                   </ul>
                   <div class="spec-btn">
@@ -323,6 +334,72 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="container section three" id="section3">
+        <div class="sub-container">
+          <img class="logo" src="imgaes/kimshop_logo.png" alt="" />
+          <div class="middle">
+            <div class="about-card card">
+              <h3>About</h3>
+              <p>
+                This website is created solely for a school project. No
+                copyright infringment is intended. The site is not hosted on
+                public online server and is not intended for public access or
+                commercial use.
+                <br />
+                <br />
+
+                Thank you for your understanding. <br />
+                -DRIO, MARK DANIEL <br />
+                -GUPILAN, GIDEON EZEKIEL
+              </p>
+            </div>
+            <div class="signup-card card">
+              <h3>Account</h3>
+              <form>
+                <div class="login">
+                  <span class="material-symbols-outlined">
+                    account_circle
+                  </span>
+                  <input type="text" placeholder="LOGIN" />
+                </div>
+
+                <div class="password">
+                  <span class="material-symbols-outlined"> password </span>
+                  <input type="password" placeholder="PASSWORD" />
+                </div>
+
+                <button>LOGIN</button>
+              </form>
+              <div class="other-links">
+                <a href="">FORGOT PASSWORD?</a>
+                <a href="">SIGN UP</a>
+              </div>
+
+              <div class="login-using">
+                <small>LOGIN USING</small>
+                <div class="socials">
+                  <img src="imgaes/socials/search.png" alt="" />
+                  <img src="imgaes/socials/facebook.png" alt="" />
+                  <img src="imgaes/socials/twitter.png" alt="" />
+                </div>
+              </div>
+
+              <div class="note">
+                <small class="red">NOTICE:</small>
+                <small
+                  >MAKE SURE TO SECURE YOUR ACCOUNT BY MAKING A STRONG
+                  PASSWORD</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <footer>
+            <p>ALL RIGHTS RESERVE TO INFORMATICS BAGUIO 2026</p>
+          </footer>
         </div>
       </div>
     </div>
